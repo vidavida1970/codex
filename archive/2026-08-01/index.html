@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>DAY 17 사실·추론·가정을 구분하는 법 | 애드아이티</title>
+  <meta name="description" content="ChatGPT 답변을 사실·추론·가정·확인 필요로 나눠 공공기관 제안과 홍보 자료의 근거 상태를 검수하는 5분 실무 강의">
+  <meta property="og:title" content="DAY 17｜사실·추론·가정을 구분하는 법">
+  <meta property="og:description" content="확신의 말투보다 근거 상태를 표시해야 검수 가능한 결과물이 됩니다.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://vidavida1970.github.io/codex/archive/2026-08-01/">
+  <meta property="og:image" content="https://addit-chatgpt-success-day1.vidavoda.chatgpt.site/og-day17-20260801.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="애드아이티 ChatGPT로 성공하기 DAY 17 사실·추론·가정을 구분하는 법">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://addit-chatgpt-success-day1.vidavoda.chatgpt.site/og-day17-20260801.png">
+  <style>
+    :root{--n:#071b36;--b:#1268e8;--s:#eaf3ff;--i:#172033;--m:#667085;--l:#e5eaf2;--g:#087a5e;--r:#c4320a;--a:#b54708}
+    *{box-sizing:border-box}html{overflow-x:hidden}body{margin:0;background:#f4f7fb;color:var(--i);font-family:Pretendard,"Noto Sans KR",Arial,sans-serif;line-height:1.72;word-break:keep-all;overflow-wrap:anywhere}
+    a{color:var(--b);text-decoration:none}.shell{max-width:760px;margin:auto;background:#fff;min-height:100vh;box-shadow:0 0 40px #071b3614}
+    .hero{background:var(--n);color:#fff;padding:26px 28px 0}.brand{display:flex;justify-content:space-between;gap:12px;font-size:12px;font-weight:800;letter-spacing:.08em}.brand span:last-child{color:#9ec5ff}
+    .progress{height:5px;background:#ffffff29;margin-top:20px;border-radius:5px;overflow:hidden}.progress i{display:block;width:42.5%;height:100%;background:#4c9aff}.hero img{display:block;width:100%;height:auto;margin-top:20px;border-radius:20px 20px 0 0}
+    main{padding:34px 28px 58px}.eyebrow{color:var(--b);font-size:12px;font-weight:900;letter-spacing:.1em}.hook{font-size:22px;line-height:1.45;font-weight:800}.lead{font-size:17px;color:#344054}
+    h2{font-size:22px;margin:46px 0 16px;color:var(--n)}h3{font-size:17px;margin:16px 0 8px}.card{border:1px solid var(--l);border-radius:18px;padding:22px;margin:16px 0}.tint{background:var(--s);border-color:#d5e7ff}.goal{border-left:5px solid var(--b)}
+    .status{display:grid;gap:10px}.step{display:grid;grid-template-columns:54px 1fr;gap:13px;align-items:start;padding:15px;border:1px solid var(--l);border-radius:14px}.step i{display:grid;place-items:center;width:54px;height:46px;border-radius:14px;background:var(--n);color:#fff;font-style:normal;font-size:11px;font-weight:900}.step b{display:block;color:var(--n)}
+    .compare{display:grid;gap:12px}.bad{border-left:5px solid var(--r)}.good{border-left:5px solid var(--g)}.label{display:inline-block;padding:4px 9px;border-radius:99px;background:#eef2f7;font-size:11px;font-weight:900}.case-meta{display:grid;grid-template-columns:100px minmax(0,1fr);gap:7px 12px;font-size:14px}
+    .prompt{position:relative;background:#0a1730;color:#dce8ff;border-radius:18px;padding:56px 20px 20px;white-space:pre-wrap;font:13px/1.65 ui-monospace,monospace;overflow:auto;max-width:100%}.copy{position:absolute;right:13px;top:13px;background:#132746;color:#fff;border:1px solid #49617f;border-radius:9px;padding:7px 10px}
+    .check{list-style:none;padding:0}.check li{padding:12px 0 12px 34px;border-bottom:1px solid var(--l);position:relative}.check li:before{content:"✓";position:absolute;left:4px;color:var(--b);font-weight:900}.tablewrap{overflow-x:auto}.matrix{width:100%;min-width:620px;border-collapse:collapse;font-size:13px}.matrix th,.matrix td{border:1px solid var(--l);padding:9px;text-align:left;vertical-align:top}.matrix th{background:#f6f8fb;color:var(--n)}
+    .mission{background:linear-gradient(135deg,#0b2a55,#1268e8);color:#fff;border-radius:22px;padding:26px}.mission h2{color:#fff;margin-top:0}.quote{font-size:21px;font-weight:900;color:var(--n);text-align:center;padding:20px}.next{border-top:1px solid var(--l);margin-top:44px;padding-top:26px}.footer{text-align:center;color:var(--m);font-size:12px;padding:30px;background:#f8fafc}
+    @media(min-width:640px){.hero{padding:32px 38px 0}main{padding:42px 48px 70px}.compare{grid-template-columns:1fr 1fr}.hook{font-size:26px}}@media(max-width:420px){.hero{padding:22px 18px 0}main{padding:28px 18px 48px}.brand{font-size:10px}.hook{font-size:20px}.card{padding:18px}.case-meta{grid-template-columns:82px minmax(0,1fr)}}
+  </style>
+</head>
+<body>
+<div class="shell">
+  <header class="hero">
+    <div class="brand"><span>ADDIT | CHATGPT로 성공하기</span><span>DAY 17 / 40</span></div>
+    <div class="progress"><i></i></div>
+    <img src="https://addit-chatgpt-success-day1.vidavoda.chatgpt.site/og-day17-20260801.png" width="1200" height="630" alt="DAY 17 사실·추론·가정을 구분하는 법">
+  </header>
+  <main>
+    <div class="eyebrow">5-MINUTE WORK CLASS · 2026.08.01</div>
+    <p class="hook">말투가 확신에 차 있다고 사실은 아닙니다. <strong>문장마다 근거 상태</strong>를 붙여야 검수할 수 있습니다.</p>
+    <div class="card goal"><b>오늘의 학습목표</b><br>ChatGPT가 만든 주장들을 사실·추론·가정·확인 필요로 분류하고, 출처와 다음 검증 행동이 남는 근거표를 완성한다.</div>
+
+    <h2>핵심 개념 1분</h2>
+    <p class="lead">“신뢰도 90%”처럼 숫자만 요구하면 근거 없는 정밀함이 생깁니다. 대신 <b>이 문장이 무엇에 기대고 있는지</b>를 표시하세요.</p>
+    <div class="status">
+      <div class="step"><i>사실</i><span><b>직접 확인된 내용</b>원문·데이터·공식 문서에 그대로 근거가 있으며 출처와 날짜를 제시할 수 있습니다.</span></div>
+      <div class="step"><i>추론</i><span><b>사실에서 도출한 해석</b>근거와 판단 과정을 함께 적고, 가능한 다른 설명도 남깁니다.</span></div>
+      <div class="step"><i>가정</i><span><b>아직 검증되지 않은 전제</b>기획을 진행하려면 참이라고 두어야 하는 조건입니다.</span></div>
+      <div class="step"><i>확인</i><span><b>자료 부족·충돌 상태</b>답을 만들지 말고 필요한 자료, 담당자, 확인 기한을 적습니다.</span></div>
+    </div>
+    <p><b>핵심 원칙:</b> 모델의 자신감이 아니라 <b>근거의 직접성·최신성·독립성</b>을 표시합니다.</p>
+
+    <h2>잘못된 사용법과 개선</h2>
+    <div class="compare">
+      <div class="card bad"><span class="label">BAD</span><h3>느낌으로 신뢰도 숫자 붙이기</h3><p>“각 문장에 신뢰도 0~100점을 매겨줘.”</p><p>점수의 기준과 검증 자료가 없어 92점과 78점의 차이를 설명할 수 없습니다.</p></div>
+      <div class="card good"><span class="label">BETTER</span><h3>근거 상태와 확인 행동 붙이기</h3><p>“문장을 사실·추론·가정·확인 필요로 분류하고, 출처·게시일·근거 문장·누락 자료·다음 확인 행동을 표로 작성하라.”</p></div>
+    </div>
+
+    <div class="card">
+      <b>애드아이티 실무 예시 · 공공기관 SNS 제안</b>
+      <div class="tablewrap"><table class="matrix">
+        <thead><tr><th>문장</th><th>상태</th><th>근거/누락</th><th>다음 행동</th></tr></thead>
+        <tbody>
+          <tr><td>지난 분기 20대의 공고 페이지 이탈률은 64%였다.</td><td>사실</td><td>분석 로그·기간·분모 확인</td><td>담당자가 원본 대시보드 대조</td></tr>
+          <tr><td>긴 안내문이 이탈의 주된 원인이다.</td><td>추론</td><td>상관은 있으나 원인 자료 없음</td><td>짧은 안내문 A/B 테스트</td></tr>
+          <tr><td>숏폼을 늘리면 신청률도 오른다.</td><td>가정</td><td>도달→신청 전환 데이터 없음</td><td>2주 파일럿과 전환율 측정</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+
+    <h2>오늘의 실제 사례</h2>
+    <div class="card">
+      <span class="label">해외 공공업무 · OpenAI/PNNL 공동 벤치마크</span>
+      <h3>미국 PNNL: 허가 문서 초안을 정확도·참조까지 사람 검토</h3>
+      <div class="case-meta">
+        <b>공개 시점</b><span>2026년 2월 26일</span>
+        <b>문제</b><span>수백 쪽의 기술·규제 자료를 교차 확인하고 법적 기준에 맞는 허가 검토 초안을 작성해야 했음</span>
+        <b>업무 흐름</b><span>18개 연방기관 업무에서 102개 과제를 구성 → Codex CLI로 자료 읽기·초안 작성 → 19명의 전문가가 구조·명료성·정확성·참조를 1~5점으로 평가</span>
+        <b>공개 결과</b><span>하위 절별 초안 시간이 1~5시간, 전체 초안 시간이 최대 약 15% 줄 가능성을 보였음. 실제 전면 배포 성과가 아니라 제한된 벤치마크 결과임</span>
+        <b>한계</b><span>자료가 불완전·상충·구식이면 명시적 지시 없이는 모델이 문제를 표시하지 않을 수 있다고 공개함</span>
+        <b>재현 포인트</b><span>정확도와 참조를 별도 평가하고, 불일치 자료는 ‘확인 필요’로 분류해 전문가 검토로 넘김</span>
+      </div>
+      <a href="https://openai.com/index/pacific-northwest-national-laboratory/" target="_blank" rel="noopener">OpenAI/PNNL 사례 원문 →</a>
+    </div>
+    <div class="card">
+      <span class="label">해외 언론 · 당사자 소개 사례</span>
+      <h3>AP: 검증 자료를 구조화하되 편집 판단은 기자가 유지</h3>
+      <div class="case-meta">
+        <b>공개 시점</b><span>2026년 7월 22일</span>
+        <b>문제</b><span>이미지·영상·공개 기록을 빠르게 조사하면서도 출처와 사실 검증을 놓치지 않아야 했음</span>
+        <b>업무 흐름</b><span>자료 수집과 위치·시간 확인 보조 → 검증 단서 구조화 → 기자가 원문과 맥락을 확인하고 편집 판단</span>
+        <b>공개 결과</b><span>AP는 반복 조사 과정을 보조하는 흐름을 공개했으나, 독립적으로 검증된 정량 성과는 제시하지 않음</span>
+        <b>재현 포인트</b><span>AI가 만든 결론이 아니라 ‘검증할 단서 목록’을 산출물로 삼음</span>
+      </div>
+      <a href="https://openai.com/index/how-news-organizations-are-using-ai/" target="_blank" rel="noopener">OpenAI 뉴스룸 사례 원문 →</a>
+    </div>
+    <div class="card tint"><b>내 업무 적용 포인트</b><p>제안서의 핵심 문장마다 <b>상태·출처·기준일·다음 확인 행동</b>을 붙이세요. 확인되지 않은 문장은 삭제보다 ‘가정’으로 명시하면 검토가 빨라집니다.</p></div>
+
+    <h2>2분 따라 하기</h2>
+    <ol>
+      <li>제안서나 홍보 원고에서 중요한 문장 5개를 복사합니다.</li>
+      <li>각 문장을 사실·추론·가정·확인 필요 중 하나로 분류합니다.</li>
+      <li>사실에는 원문 링크와 기준일, 추론에는 도출 근거와 대안을 붙입니다.</li>
+      <li>가정·확인 필요에는 담당자와 확인 기한을 적습니다.</li>
+    </ol>
+
+    <h2>복사형 실전 프롬프트</h2>
+    <div class="prompt" id="prompt"><button class="copy" type="button" onclick="copyPrompt()">복사</button>[검토할 원고]
+{제안서·보고서·홍보 원고 붙여넣기}
+
+[검토 기준일]
+2026-08-01
+
+각 핵심 문장을 아래 4가지로 분류하라.
+- 사실: 제공 자료나 확인 가능한 원문이 직접 뒷받침함
+- 추론: 하나 이상의 사실에서 도출한 해석
+- 가정: 아직 검증되지 않았지만 기획에 필요한 전제
+- 확인 필요: 자료가 없거나 서로 충돌함
+
+표 형식:
+| 문장 | 분류 | 출처·게시일·근거 | 근거 수준 | 누락/충돌 | 다음 확인 행동 | 담당자·기한 |
+
+[근거 수준 규칙]
+- 확인됨: 원출처가 직접 뒷받침하고 기준일에 유효함
+- 잠정: 간접 자료이거나 단일 출처만 있음
+- 검증 필요: 출처가 없거나 오래됐거나 상충함
+
+[작업 규칙]
+1. 문장에 없는 사실을 보충해 만들지 않는다.
+2. 링크가 실제 원문인지 확인하지 못하면 ‘검증 필요’로 표시한다.
+3. 추론은 도출 근거와 가능한 다른 설명을 함께 쓴다.
+4. 숫자는 분모·기간·측정 지표가 없으면 사실로 확정하지 않는다.
+5. 마지막에 가장 위험한 ‘가정/확인 필요’ 3개와 확인 순서를 제시한다.</div>
+
+    <h2>결과 체크 3문항</h2>
+    <ul class="check">
+      <li>모든 핵심 문장에 사실·추론·가정·확인 필요 중 하나가 붙었는가?</li>
+      <li>사실의 출처·기준일과 추론의 도출 근거를 사람이 직접 확인했는가?</li>
+      <li>가정과 확인 필요 항목에 다음 행동·담당자·기한이 있는가?</li>
+    </ul>
+
+    <h2>자주 하는 실수</h2>
+    <ul>
+      <li>유창하고 단정적인 말투를 높은 신뢰도로 해석하는 것</li>
+      <li>검색 결과 요약을 원출처 확인 없이 사실로 옮기는 것</li>
+      <li>단일 수치에 분모·측정 기간·지표 정의를 쓰지 않는 것</li>
+      <li>‘확인 필요’라고만 쓰고 담당자와 기한을 남기지 않는 것</li>
+    </ul>
+
+    <div class="mission"><h2>오늘의 미션</h2><p>실제 제안서에서 중요한 문장 8개를 골라 <b>사실·추론·가정·확인 필요</b>로 분류하고, ‘검증 필요’ 2개에 원문·담당자·기한을 채우세요.</p></div>
+
+    <h2>최신 업데이트</h2>
+    <div class="card"><b>2026.07.30 확인 — OpenAI Help Center의 사실 검증 안내 갱신</b><p>OpenAI는 ChatGPT가 확신 있게 틀릴 수 있으며 잘못된 사실·가짜 인용·존재하지 않는 출처를 만들 수 있다고 안내합니다. 중요한 정보는 Search 또는 Deep research의 인용을 열어 원문에서 다시 확인해야 합니다.</p><a href="https://help.openai.com/en/articles/8313428-does-chatgpt-tell-the-truth" target="_blank" rel="noopener">OpenAI 공식 도움말 →</a></div>
+    <div class="card"><b>2026.07.31 — GPT‑Live 지원 오디오에 출처 확인 신호 추가</b><p>OpenAI는 지원되는 GPT‑Live 생성 오디오에 SynthID 워터마킹을 적용하고 공개 검증 도구와 API로 출처 신호를 확인할 수 있다고 발표했습니다. 텍스트뿐 아니라 이미지·오디오도 ‘무엇을 근거로 진짜라고 보는지’를 확인하는 습관이 중요합니다.</p><a href="https://openai.com/index/introducing-gpt-live/" target="_blank" rel="noopener">OpenAI 공식 발표 →</a></div>
+
+    <h2>확장 학습</h2>
+    <div class="card"><b>1. Does ChatGPT tell the truth? · OpenAI Help Center · 2026.07.30 갱신</b><p>‘자신감은 신뢰도가 아니다’라는 오늘 수업의 공식 근거입니다. <b>Confidence isn’t reliability와 Practical tips</b> 부분만 읽으세요.</p><a href="https://help.openai.com/en/articles/8313428-does-chatgpt-tell-the-truth" target="_blank" rel="noopener">공식 도움말 →</a></div>
+    <div class="card"><b>2. Research with ChatGPT · OpenAI Academy</b><p>Search와 Deep research로 출처가 있는 조사 결과를 만들고 원문을 검토하는 공식 학습 자료입니다. <b>Search와 Deep research 비교·출처 확인</b> 부분을 보세요.</p><a href="https://openai.com/academy/search-and-deep-research/" target="_blank" rel="noopener">공식 학습 자료 →</a></div>
+    <div class="card"><b>3. AI Playbook for the UK Government · UK Government · 2025.02.10</b><p>공공업무에서 사람의 통제·품질보증·위험 관리를 어떻게 남길지 설명하는 공식 실무 지침입니다. <b>Meaningful human control과 Assurance</b> 부분을 읽으세요.</p><a href="https://www.gov.uk/government/publications/ai-playbook-for-the-uk-government/artificial-intelligence-playbook-for-the-uk-government-html" target="_blank" rel="noopener">영국 정부 원문 →</a></div>
+
+    <p class="quote">“확신의 말투가 아니라, 근거의 상태가 신뢰도를 만듭니다.”</p>
+    <div class="next"><span class="eyebrow">NEXT · DAY 18</span><h3>불확실성을 남기고도 결론 내리는 법</h3></div>
+  </main>
+  <footer class="footer">ADDIT · ChatGPT로 성공하기<br>질문 잘하기에서 일을 완성하기로</footer>
+</div>
+<script>
+async function copyPrompt(){
+  const n=document.getElementById('prompt').cloneNode(true);n.querySelector('button').remove();const text=n.innerText.trim();
+  if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(text)}else{const t=document.createElement('textarea');t.value=text;t.setAttribute('readonly','');t.style.position='fixed';t.style.opacity='0';document.body.appendChild(t);t.select();document.execCommand('copy');t.remove()}
+  const b=document.querySelector('.copy');b.textContent='복사됨';setTimeout(()=>b.textContent='복사',1200)
+}
+</script>
+</body>
+</html>
