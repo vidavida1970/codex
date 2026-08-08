@@ -1,0 +1,62 @@
+<!doctype html><html lang="ko"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DAY 22 팀 검수 결과를 프롬프트 개선 백로그로 연결하기 | 애드아이티</title>
+<meta name="description" content="검수 실패를 증거·심각도·우선순위·재시험 조건이 있는 프롬프트 개선 과제로 바꾸는 5분 실무 강의">
+<meta property="og:title" content="DAY 22｜팀 검수 결과를 프롬프트 개선 백로그로 연결하기">
+<meta property="og:description" content="검수표에 남은 실패를 다음 프롬프트 버전의 실행 가능한 개선 과제로 전환합니다.">
+<meta property="og:type" content="article"><meta property="og:url" content="https://vidavida1970.github.io/codex/archive/2026-08-08/">
+<meta property="og:image" content="https://addit-chatgpt-success-day1.vidavoda.chatgpt.site/og-day22-20260808.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="애드아이티 ChatGPT로 성공하기 DAY 22 팀 검수 결과를 프롬프트 개선 백로그로 연결하기"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://addit-chatgpt-success-day1.vidavoda.chatgpt.site/og-day22-20260808.png">
+<style>
+:root{--n:#071b36;--b:#1268e8;--s:#eaf3ff;--i:#172033;--m:#667085;--l:#e5eaf2;--g:#087a5e;--r:#c4320a}*{box-sizing:border-box}html{overflow-x:hidden}body{margin:0;background:#f4f7fb;color:var(--i);font-family:Pretendard,"Noto Sans KR",Arial,sans-serif;line-height:1.72;word-break:keep-all;overflow-wrap:anywhere}a{color:var(--b);text-decoration:none}.shell{max-width:760px;margin:auto;background:#fff;min-height:100vh;box-shadow:0 0 40px #071b3614}.hero{background:var(--n);color:#fff;padding:26px 28px 0}.brand{display:flex;justify-content:space-between;gap:12px;font-size:12px;font-weight:800;letter-spacing:.08em}.brand span:last-child{color:#9ec5ff}.progress{height:5px;background:#ffffff29;margin-top:20px;border-radius:5px;overflow:hidden}.progress i{display:block;width:55%;height:100%;background:#4c9aff}.hero img{display:block;width:100%;height:auto;margin-top:20px;border-radius:20px 20px 0 0}main{padding:34px 28px 58px}.eyebrow{color:var(--b);font-size:12px;font-weight:900;letter-spacing:.1em}.hook{font-size:22px;line-height:1.45;font-weight:800}.lead{font-size:17px;color:#344054}h2{font-size:22px;margin:46px 0 16px;color:var(--n)}h3{font-size:17px;margin:16px 0 8px}.card{border:1px solid var(--l);border-radius:18px;padding:22px;margin:16px 0}.tint{background:var(--s);border-color:#d5e7ff}.goal{border-left:5px solid var(--b)}.grid{display:grid;gap:12px}.step{display:grid;grid-template-columns:52px 1fr;gap:13px;align-items:start;padding:15px;border:1px solid var(--l);border-radius:14px}.step i{display:grid;place-items:center;width:52px;height:46px;border-radius:14px;background:var(--n);color:#fff;font-style:normal;font-size:11px;font-weight:900}.step b{display:block;color:var(--n)}.compare{display:grid;gap:12px}.bad{border-left:5px solid var(--r)}.good{border-left:5px solid var(--g)}.label{display:inline-block;padding:4px 9px;border-radius:99px;background:#eef2f7;font-size:11px;font-weight:900}.case-meta{display:grid;grid-template-columns:100px minmax(0,1fr);gap:7px 12px;font-size:14px}.table-wrap{overflow:auto;border:1px solid var(--l);border-radius:15px}table{width:100%;border-collapse:collapse;min-width:620px;font-size:13px}th,td{padding:11px 12px;text-align:left;border-bottom:1px solid var(--l);vertical-align:top}th{background:#f8fafc;color:var(--n)}.prompt{position:relative;background:#0a1730;color:#dce8ff;border-radius:18px;padding:56px 20px 20px;white-space:pre-wrap;font:13px/1.65 ui-monospace,monospace;overflow:auto;max-width:100%}.copy{position:absolute;right:13px;top:13px;background:#132746;color:#fff;border:1px solid #49617f;border-radius:9px;padding:7px 10px}.check{list-style:none;padding:0}.check li{padding:12px 0 12px 34px;border-bottom:1px solid var(--l);position:relative}.check li:before{content:"✓";position:absolute;left:4px;color:var(--b);font-weight:900}.mission{background:linear-gradient(135deg,#0b2a55,#1268e8);color:#fff;border-radius:22px;padding:26px}.mission h2{color:#fff;margin-top:0}.quote{font-size:21px;font-weight:900;color:var(--n);text-align:center;padding:20px}.next{border-top:1px solid var(--l);margin-top:44px;padding-top:26px}.footer{text-align:center;color:var(--m);font-size:12px;padding:30px;background:#f8fafc}@media(min-width:640px){.hero{padding:32px 38px 0}main{padding:42px 48px 70px}.compare{grid-template-columns:1fr 1fr}.hook{font-size:26px}}@media(max-width:420px){.hero{padding:22px 18px 0}main{padding:28px 18px 48px}.brand{font-size:10px}.hook{font-size:20px}.card{padding:18px}.case-meta{grid-template-columns:82px minmax(0,1fr)}}
+</style></head><body><div class="shell"><header class="hero"><div class="brand"><span>ADDIT | CHATGPT로 성공하기</span><span>DAY 22 / 40</span></div><div class="progress"><i></i></div><img src="https://addit-chatgpt-success-day1.vidavoda.chatgpt.site/og-day22-20260808.png" width="1200" height="630" alt="DAY 22 팀 검수 결과를 프롬프트 개선 백로그로 연결하기"></header><main>
+<div class="eyebrow">5-MINUTE WORK CLASS · 2026.08.08</div><p class="hook">검수표에 “실패”만 남기면 다음 작업에서 같은 문제가 반복됩니다. 실패를 <strong>증거가 있는 개선 과제</strong>로 바꿔야 품질이 누적됩니다.</p><div class="card goal"><b>오늘의 학습목표</b><br>DAY 21 팀 체크리스트의 실패 항목을 증거·심각도·원인 가설·수정 범위·재시험 조건이 있는 프롬프트 개선 백로그로 전환한다.</div>
+<h2>핵심 개념 1분</h2><p class="lead"><b>개선 백로그</b>는 “프롬프트를 더 구체적으로” 같은 희망 목록이 아닙니다. 실제 실패 증거를 작은 수정 과제로 바꾸고, 위험과 빈도로 우선순위를 정한 뒤, 재시험 통과까지 추적하는 운영 목록입니다.</p><div class="grid"><div class="step"><i>증거</i><span><b>실패 문장과 입력 조건</b>어떤 자료에서 어떤 판정이 실패했는지 재현 가능하게 남깁니다.</span></div><div class="step"><i>분류</i><span><b>누락·충돌·모호·형식·근거</b>증상 대신 원인 후보를 유형으로 묶습니다.</span></div><div class="step"><i>우선</i><span><b>심각도 × 반복 빈도 × 수정 비용</b>치명적이고 자주 생기며 작게 고칠 수 있는 항목부터 처리합니다.</span></div><div class="step"><i>종료</i><span><b>재시험 통과까지 닫지 않기</b>담당·기한·수정 범위·통과 조건을 정하고 회귀 테스트로 확인합니다.</span></div></div>
+<h2>잘못된 사용법과 개선</h2><div class="compare"><div class="card bad"><span class="label">BAD</span><h3>“다음에는 더 꼼꼼히”로 종료</h3><p>증거·담당·통과 조건이 없어 같은 실패가 반복됩니다. 모든 의견을 한꺼번에 반영하면 무엇이 효과가 있었는지도 알 수 없습니다.</p></div><div class="card good"><span class="label">BETTER</span><h3>한 실패를 한 개선 과제로</h3><p>실패 증거와 원인 가설을 연결하고 수정 범위를 작게 제한합니다. 동일 사례와 전체 회귀 묶음이 통과해야 완료합니다.</p></div></div>
+<div class="card"><b>애드아이티 실무 예시 · 공공기관 제안 요약문</b><p>팀 검수에서 “근거 없는 기대효과 수치”가 반복 실패했습니다. 이를 막연한 주의사항이 아니라 배포 가능한 개선 과제로 바꿉니다.</p><div class="table-wrap"><table><thead><tr><th>ID</th><th>실패 증거</th><th>개선 과제</th><th>완료 기준</th></tr></thead><tbody><tr><td>B-01</td><td>원문 없는 “참여율 30% 향상” 생성</td><td>수치 출처 필드와 빈값 규칙 추가</td><td>누락·충돌 사례 모두 수치 생성 0건</td></tr><tr><td>B-02</td><td>RFP 표현을 확정 성과처럼 서술</td><td>사실·목표·제안 구분 태그 추가</td><td>검수자 2명이 동일 분류</td></tr><tr><td>B-03</td><td>500자 제한 3회 초과</td><td>출력 전 글자 수 자체 점검 추가</td><td>대표 사례 6개 모두 500자 이내</td></tr></tbody></table></div></div>
+<h2>오늘의 실제 사례</h2><div class="card"><span class="label">해외 기업 · 당사자 공동 공개 사례</span><h3>Thrive Holdings·Crete: 전문가 수정을 개선 과제로 전환</h3><div class="case-meta"><b>적용 시점</b><span>2025년 말~2026년 상반기 공동 개발, 2026년 5월 27일 공개</span><b>문제</b><span>세무 전문가가 고친 값이 추출 오류인지 업무 소음인지 구분되지 않아 개선이 수작업으로 지연됨</span><b>업무 흐름</b><span>전문가 수정과 전체 처리 경로를 기록하고, 반복 실패를 묶어 평가 목표와 범위가 정해진 Codex 과제로 전환한 뒤 표적·회귀 평가로 검증</span><b>공개 결과</b><span>파일럿에서 신고서 7,000건 처리. 세무 준비 시간 약 3분의 1 절감, 최대 97% 정확도, 처리량 약 50% 증가. 75% 필드 정확도 도달 신고 비율은 출시 시 25%에서 6주 뒤 86%로 상승</span><b>재현 포인트</b><span>모든 의견을 과제로 만들지 않고 반복·영향·근거가 확인된 패턴만 명확한 성공 조건이 있는 백로그로 승격</span></div><a href="https://openai.com/index/building-self-improving-tax-agents-with-codex/" target="_blank" rel="noopener">OpenAI·Thrive 공동 사례 →</a></div><div class="card tint"><b>사실과 강사 해석</b><p><b>확인된 사실:</b> Thrive·Crete·OpenAI는 전문가 수정→구조화된 증거→평가 목표→범위가 정해진 Codex 과제→회귀 검증의 흐름을 공개했습니다. <b>강사 제안:</b> 애드아이티도 팀 검수 실패를 같은 구조의 백로그로 만들되, 개인정보와 원문은 승인된 저장소 안에서만 다룹니다.</p></div>
+<h2>2분 따라 하기</h2><ol><li>DAY 21 체크리스트에서 실패한 항목 하나와 해당 출력 문장을 고릅니다.</li><li>실패 유형·심각도·반복 빈도·영향받는 산출물을 적습니다.</li><li>프롬프트에서 바꿀 한 부분과 바꾸지 않을 부분을 구분합니다.</li><li>표적 테스트 1개와 전체 회귀 테스트 조건을 정해 백로그 카드로 저장합니다.</li></ol>
+<h2>복사형 실전 프롬프트</h2><div class="prompt" id="prompt"><button class="copy" type="button" onclick="copyPrompt()">복사</button>[역할]
+너는 프롬프트 개선 백로그 관리자다. 결과물을 다시 쓰지 말고,
+팀 검수 실패를 재현·우선순위화·재시험 가능한 개선 과제로 바꿔라.
+
+[업무와 현재 프롬프트]
+- 결과물 유형: [제안서/SNS/브리핑]
+- 사용처와 독자: [입력]
+- 현재 프롬프트: [붙여넣기]
+
+[팀 검수 결과]
+[DAY 21 체크리스트 결과 붙여넣기]
+
+[실패 증거]
+- 입력 조건: [입력]
+- 실패한 출력: [필요한 부분만]
+- 기대 행동: [입력]
+- 실제 영향: [반려/수정 시간/신뢰 위험]
+
+[수행]
+1. 실패를 `누락·충돌·모호·형식·근거·도구` 중 하나로 분류한다.
+2. 원인 가설을 최대 2개 제시하고, 확인되지 않은 것은 가설로 표시한다.
+3. 심각도(치명/중요/경미), 반복 빈도(상/중/하), 수정 비용(상/중/하)을 판정한다.
+4. 한 카드가 한 문제만 다루도록 수정 범위를 제한한다.
+5. 프롬프트에서 바꿀 부분과 바꾸지 않을 부분을 분리한다.
+6. 표적 테스트 1개와 전체 회귀 테스트를 완료 조건으로 만든다.
+7. `즉시/이번 주/관찰/제외` 중 우선순위를 추천한다.
+
+[출력]
+백로그 ID | 실패 증거 | 유형 | 심각도 | 빈도 | 원인 가설 |
+수정 범위 | 비범위 | 담당 | 기한 | 표적 테스트 | 회귀 조건 | 우선순위
+
+[완료 규칙]
+- 표적 테스트 통과
+- 기존 치명 회귀 0건
+- 사람 검수가 필요한 항목은 승인자 기록
+- 재현되지 않는 의견은 바로 수정하지 말고 `관찰`로 분류
+
+마지막에 가장 먼저 처리할 카드 1개와 선정 이유를 2줄로 써라.</div>
+<h2>결과 체크 3문항</h2><ul class="check"><li>모든 백로그 카드에 실제 실패 증거와 재현 조건이 있는가?</li><li>심각도·빈도·수정 비용으로 우선순위를 설명할 수 있는가?</li><li>표적 테스트와 전체 회귀 테스트가 모두 완료 조건에 포함됐는가?</li></ul>
+<h2>자주 하는 실수</h2><ul><li>한 카드에 여러 문제를 묶어 완료 기준을 흐리는 것</li><li>한 사람의 취향을 치명 결함처럼 우선 처리하는 것</li><li>원자료·도구 문제를 프롬프트 문장만 고쳐 해결하려는 것</li><li>표적 테스트만 통과하고 기존 회귀 묶음을 돌리지 않는 것</li></ul>
+<div class="mission"><h2>오늘의 미션</h2><p>DAY 21 팀 체크리스트에서 실패 3개를 골라 <b>개선 백로그 카드 3장</b>으로 바꾸세요. 심각도·빈도·수정 비용으로 우선순위를 정하고, 1순위 카드에는 표적 테스트와 회귀 통과 조건까지 채웁니다.</p></div>
+<h2>최신 업데이트</h2><div class="card"><b>2026.08.05 — Fast mode의 장문맥 지원 확대</b><p><b>확인된 사실:</b> OpenAI API 변경 기록에 따르면 Fast mode가 GPT-5.6 Sol·Terra·Luna의 272K 토큰 초과 장문맥 요청을 지원하며, Standard 대비 최대 2.5배 속도 향상을 제공하도록 업데이트됐습니다.</p><p><b>실무 해석:</b> 모델·실행 방식 변경은 새 개선 기회와 새 실패 가능성을 함께 만듭니다. “더 빠르게”라는 요청도 품질·지연시간·비용의 측정 가능한 백로그 카드로 만들어 검증해야 합니다.</p><a href="https://developers.openai.com/api/docs/changelog" target="_blank" rel="noopener">OpenAI API Changelog →</a></div>
+<h2>확장 학습</h2><div class="card"><b>1. Building self-improving tax agents with Codex · OpenAI</b><p>전문가 수정이 증거·평가 목표·범위가 정해진 과제로 바뀌는 실제 흐름입니다. <b>세 단계 루프와 Rental property example</b>을 읽으세요. 영상 아님.</p><a href="https://openai.com/index/building-self-improving-tax-agents-with-codex/" target="_blank" rel="noopener">공식 사례 →</a></div><div class="card"><b>2. Evaluation best practices · OpenAI Developers</b><p>실패 사례를 대표 데이터셋과 평가 기준으로 구조화하는 원칙을 확인할 수 있습니다. <b>Design your eval과 Iterate</b> 부분을 읽으세요. 영상 아님.</p><a href="https://developers.openai.com/api/docs/guides/evaluation-best-practices" target="_blank" rel="noopener">공식 가이드 →</a></div><div class="card"><b>3. Add evals to your AI application · OpenAI Academy</b><p>사용자에게 보이는 약속 하나에서 기준선을 만들고 변경을 검증하는 실습입니다. <b>Define success와 Build a baseline</b> 부분을 보세요. 영상 아님.</p><a href="https://learn.chatgpt.com/use-cases/ai-app-evals" target="_blank" rel="noopener">공식 실습 →</a></div>
+<p class="quote">“검수 실패는 지적이 아니라, 증거와 완료 조건을 갖춘 다음 개선 과제여야 합니다.”</p><div class="next"><span class="eyebrow">NEXT · DAY 23</span><h3>검색 질문을 조사계획으로 바꾸기</h3></div>
+</main><footer class="footer">ADDIT · ChatGPT로 성공하기<br>질문 잘하기에서 일을 완성하기로</footer></div><script>async function copyPrompt(){const n=document.getElementById('prompt').cloneNode(true);n.querySelector('button').remove();const text=n.innerText.trim();try{await navigator.clipboard.writeText(text)}catch{const t=document.createElement('textarea');t.value=text;t.style.position='fixed';t.style.opacity='0';document.body.appendChild(t);t.select();document.execCommand('copy');t.remove()}const b=document.querySelector('.copy');b.textContent='복사됨';setTimeout(()=>b.textContent='복사',1200)}</script></body></html>
